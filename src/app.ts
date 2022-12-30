@@ -1,6 +1,5 @@
 import express, {Application, Request, Response, NextFunction} from 'express'
-import env from 'dotenv'
-env.config()
+import './config/envConfig'
 const app:Application = express()
 const PORT = process.env.PORT
 //MongoDb Db SetUp goes Here
