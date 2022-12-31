@@ -1,8 +1,9 @@
 import './envConfig';
 const Mongo_Key = process.env.Mongo_Key || '';
 const MONGO_PASSSWORD = process.env.MONGO_PASSWORD || '';
+const MONGO_USERNAME = process.env.MONGO_USERNAME || '';
 
-const MONGO_URL = 'mongodb://0.0.0.0:27017/googleauth';
+const MONGO_URL = Mongo_Key;
 
 const SERVER_PORT = process.env.SERVER_PORT ? Number(process.env.SERVER_PORT) : 1337;
 
